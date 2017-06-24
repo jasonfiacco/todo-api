@@ -59,7 +59,6 @@
     </div>
     <div class="modal-footer">
       <button data-bind="click: login" class="btn btn-primary">Login</button>
-      <!-- <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button> -->
     </div>
   </div>
 
@@ -203,8 +202,6 @@
         self.tasks()[i].description(newTask.description);
         self.tasks()[i].done(newTask.done);
       }
-
-
 
       self.remove = function(task) {
         self.ajax(task.uri(), 'DELETE').done(function() {
